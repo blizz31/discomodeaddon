@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="popup.css">
+  </head>
+
+  <body style="margin:10px;">
+    <h2 style="text-align: center;">Disco <img src="../icons/DM_icon_v1_48.png" height=48 width=48/> Mode</h2>
+    <h3 style="margin-bottom: -0.6%;">ON/OFF</h3>
+  	<input id="cb-toggle" type="checkbox" class="hide-me" aria-labelledby="cb-label" checked>
+	<label for="cb-toggle" class="toggle"></label>
+  
+	<h3>Disco options</h3>		
+	<form>
+	  <label>Disable live-changing colours:</label>
+	  <input type="checkbox" name="ccoptions" id="ccOff">
+	  <br />
+	  <label>Colour change interval (milliseconds):</label>
+	  <input type="number" id="ccinterval">
+	  <br />
+	  <label>Disable font style changes:</label>
+	  <input type="checkbox" name="styleoptions" id="csOff">
+	  <br/>
+	  <br/>
+	  <button type="submit">Save</button>
+	  <br/>
+	</form>
+
+	<script src="popup.js"></script>
+  </body>
+</html>
